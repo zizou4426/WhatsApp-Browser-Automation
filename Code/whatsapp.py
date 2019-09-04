@@ -28,7 +28,7 @@ target = '"Zuckerberg"'
 string = "Data is money, right?"
 # string = "Your Message"
 
-x_arg = '//span[contains(@title,' + target + ')]'
+x_arg = '//*[@id="pane-side"]/div[1]/div/div/div[4]/div/div/div[2]/div[1]/div[1]/span/span[contains(@title,' + target + ')]'
 group_title = wait.until(EC.presence_of_element_located(( 
 	By.XPATH, x_arg))) 
 group_title.click() 
